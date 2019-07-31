@@ -164,7 +164,9 @@ router.get("/users/profile/:username", (req, res) => {
       username: user.username,
       name: user.name,
       email: user.email,
-      avatar: `localhost:${powrt}/users/avatar/:imageName/${user.avatar}`
+      avatar: `https://ben-jc9mysql.herokuapp.com//users/avatar/:imageName/${
+        user.avatar
+      }`
     });
   });
 });
