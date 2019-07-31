@@ -12,7 +12,7 @@ server.use(express.json());
 server.use(userRouter);
 server.use(taskRouter);
 
-app.get("/", (req, res) => {
+server.get("/", (req, res) => {
   res.send("<h1>Selamat data di API Heroku </h1>");
 });
 
