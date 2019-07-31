@@ -1,6 +1,6 @@
 const conn = require("../connection");
 const router = require("express").Router();
-const isEmail = require("Validator/lib/isEmail");
+const isEmail = require("validator/lib/isEmail");
 const bcrypt = require("bcrypt");
 const path = require("path");
 const multer = require("multer");
