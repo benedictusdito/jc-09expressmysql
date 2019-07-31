@@ -12,9 +12,9 @@ server.use(express.json());
 server.use(userRouter);
 server.use(taskRouter);
 
-applicationCache.get("/", res) => {
-  res.send("Selamat datang di Heroku API")
-}
+app.get("/", (req, res) => {
+  res.send("<h1>Selamat data di API Heroku </h1>");
+});
 
 server.listen(port, () => {
   console.log("Berhasil Running di" + port);
